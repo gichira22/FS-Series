@@ -78,6 +78,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const characterAlias = document.createElement("p");
       characterAlias.textContent = `Alias: ${character.alias}`;
 
+      const characterOrigin = document.createElement("h4");
+      characterOrigin.textContent = `Origin: ${character.origin}`;
+
+      const characterAbilities = document.createElement("h4");
+      characterAbilities.textContent = `Abilities: ${character.abilities}`;
+
       const favoriteButton = document.createElement("button");
       favoriteButton.textContent = "Favorite";
       favoriteButton.addEventListener("click", function () {
@@ -90,6 +96,8 @@ document.addEventListener("DOMContentLoaded", function () {
       characterDetails.appendChild(characterGender);
       characterDetails.appendChild(characterHair);
       characterDetails.appendChild(characterAlias);
+      characterDetails.appendChild(characterOrigin);
+      characterDetails.appendChild(characterAbilities);
       characterDetails.appendChild(favoriteButton);
       characterCard.appendChild(characterImage);
       characterCard.appendChild(characterDetails);
@@ -136,12 +144,20 @@ document.addEventListener("DOMContentLoaded", function () {
       const characterAlias = document.createElement("p");
       characterAlias.textContent = `Alias: ${character.alias}`;
 
+      const characterOrigin = document.createElement("h4");
+      characterOrigin.textContent = `Origin: ${character.origin}`;
+
+      const characterAbilities = document.createElement("h4");
+      characterAbilities.textContent = `Abilities: ${character.abilities}`;
+
       characterDetails.appendChild(characterName);
       characterDetails.appendChild(characterStatus);
       characterDetails.appendChild(characterSpecies);
       characterDetails.appendChild(characterGender);
       characterDetails.appendChild(characterHair);
       characterDetails.appendChild(characterAlias);
+      characterDetails.appendChild(characterOrigin);
+      characterDetails.appendChild(characterAbilities);
       characterCard.appendChild(characterImage);
       characterCard.appendChild(characterDetails);
       favoritesContainer.appendChild(characterCard);
