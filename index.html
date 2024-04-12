@@ -15,13 +15,13 @@
             <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
             <li><a href="#about" onclick="navigateTo('about')">About</a></li>
             <li>
-              <a href="#favorites" onclick="navigateTo('favorites')"
-                >Favorites</a
+              <a href="#contact us" onclick="navigateTo('contact')"
+                >Contact Us</a
               >
             </li>
             <li>
-              <a href="#contact us" onclick="navigateTo('contact')"
-                >Contact Us</a
+              <a href="#favorites" onclick="navigateTo('favorites')"
+                >Favorites</a
               >
             </li>
           </ul>
@@ -30,12 +30,15 @@
       <div id="conts">
         <input type="text" id="searchInput" placeholder="Search characters" />
         <button id="searchButton">Search</button>
-        <button id="favoritesButton">View Favorites</button>
       </div>
     </header>
     <main>
       <div id="characterList"></div>
     </main>
+    <section id="favorites">
+      <h2>Favorites</h2>
+      <div id="favoritesContainer"></div>
+    </section>
     <footer>
       <div>
         <textarea id="commentInput" placeholder="Leave a comment..."></textarea>
