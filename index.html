@@ -4,7 +4,92 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FS Series Project</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <h1>FS Series Project</h1>
+        <nav>
+          <ul>
+            <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+            <li><a href="#about" onclick="navigateTo('about')">About</a></li>
+            <li>
+              <a href="#favorites" onclick="navigateTo('favorites')"
+                >Favorites</a
+              >
+            </li>
+            <li>
+              <a href="#contact us" onclick="navigateTo('contact')"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="conts">
+        <input type="text" id="searchInput" placeholder="Search characters" />
+        <button id="searchButton">Search</button>
+        <button id="favoritesButton">View Favorites</button>
+      </div>
+    </header>
+    <main>
+      <div id="characterList"></div>
+    </main>
+    <footer>
+      <div>
+        <textarea id="commentInput" placeholder="Leave a comment..."></textarea>
+        <button id="commentSubmitButton">Submit</button>
+      </div>
+      <section id="details">
+        <div>
+          <h3>Contact Us</h3>
+          <p>
+            <a href="mailto:virginigchira@finalspace.com"
+              >virginigchira@gmail.com</a
+            ><br />
+            +254 705248878<br />
+            @ginny_galaxy
+          </p>
+        </div>
+
+        <div>
+          <h3>Location</h3>
+          <p>
+            Animation World<br />
+            P.O. Box 45-00100<br />
+            Nairobi, Kenya.
+          </p>
+        </div>
+
+        <div>
+          <h3>Follow</h3>
+          <p>
+            <a href="https://www.tiktok.com/@veegee61?_t=8knpvreDMMX&_r=1"
+              >Tiktok</a
+            ><br />
+            <a
+              href="https://www.linkedin.com/in/virginia-gichira-467840232?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              >LinkedIn</a
+            ><br />
+            <a
+              href="https://www.instagram.com/virgygichira?igsh=YzljYTk1ODg3Zg=="
+              >Instagram</a
+            ><br />
+          </p>
+        </div>
+      </section>
+      <div class="copyright">
+        <p>
+          Copyright &copy;
+          <script async>
+            document.write(new Date().getFullYear());
+          </script>
+          . All right reserved. By Ginny.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
